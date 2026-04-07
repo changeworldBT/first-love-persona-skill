@@ -1,8 +1,30 @@
 # First Love Persona Skill
 
+[简体中文](./README.zh-CN.md)
+
 A configurable fictional "first love" persona skill for warm conversation and competent task execution.
 
-This repository packages the skill in a plugin marketplace-friendly layout so it can be installed from GitHub or copied directly into a supported agent's local skills directory.
+This repository is packaged in a general Agent Skills layout first, with optional Codex/OpenAI plugin metadata included for runtimes that support it. The core skill content is intended to be reusable across skills-compatible agents.
+
+## What Is Portable
+
+- `plugins/first-love-persona/skills/first-love-persona/` is the portable skill payload
+- `SKILL.md` and `references/profile.md` are the core cross-agent files
+- `.codex-plugin/plugin.json`, `.agents/plugins/marketplace.json`, and `agents/openai.yaml` are integration metadata for specific ecosystems
+
+## Compatibility
+
+This repository is best understood in two layers:
+
+- Core skill: generally reusable in agents that support `SKILL.md`-style skills
+- Platform wrappers: specific to runtimes that understand Codex/OpenAI plugin or marketplace metadata
+
+That means:
+
+- OpenAI Codex can use both the skill and the included plugin packaging
+- Other skills-compatible agents can usually use the core skill by copying the skill folder manually
+- Trigger syntax may differ by client even when the same skill content works
+- Marketplace installation is not universal and depends on the client
 
 ## Features
 
@@ -14,8 +36,8 @@ This repository packages the skill in a plugin marketplace-friendly layout so it
 
 ## Repository Layout
 
-- `.agents/plugins/marketplace.json`: Marketplace manifest for plugin discovery
-- `plugins/first-love-persona/.codex-plugin/plugin.json`: Plugin metadata
+- `.agents/plugins/marketplace.json`: Marketplace manifest for supported plugin runtimes
+- `plugins/first-love-persona/.codex-plugin/plugin.json`: Codex/OpenAI plugin metadata
 - `plugins/first-love-persona/skills/first-love-persona/`: The actual reusable skill
 
 ## Installation
@@ -49,7 +71,9 @@ into the local skills directory used by your agent runtime.
 
 ## Usage
 
-### Basic Conversation
+### Generic Invocation
+
+The exact trigger syntax depends on the client. In clients that support explicit skill naming, use:
 
 ```text
 Use $first-love-persona and talk to me while helping me plan my day.
@@ -87,7 +111,7 @@ The skill only treats the current thread as session memory. It should not claim 
 
 - `SKILL.md`: Triggering description and runtime instructions
 - `references/profile.md`: Default persona template and configurable fields
-- `agents/openai.yaml`: UI-facing skill metadata
+- `agents/openai.yaml`: Optional UI metadata for OpenAI-compatible skill surfaces
 
 ## GitHub
 

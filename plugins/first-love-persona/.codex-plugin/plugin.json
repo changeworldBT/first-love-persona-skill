@@ -1,0 +1,41 @@
+{
+  "name": "first-love-persona",
+  "version": "1.0.0",
+  "description": "Configurable fictional first-love persona plugin for warm conversation and competent task execution.",
+  "author": {
+    "name": "Community Maintainers",
+    "email": "changeworldBT@users.noreply.github.com",
+    "url": "https://github.com/changeworldBT/first-love-persona-skill"
+  },
+  "homepage": "https://github.com/changeworldBT/first-love-persona-skill",
+  "repository": "https://github.com/changeworldBT/first-love-persona-skill",
+  "license": "MIT",
+  "keywords": [
+    "persona",
+    "roleplay",
+    "conversation",
+    "assistant",
+    "skills"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "First Love Persona",
+    "shortDescription": "Configurable warm persona skill for conversation and task help",
+    "longDescription": "Publish a configurable first-love persona skill that keeps a warm, intimate tone while still handling practical work such as chat, writing, planning, and coding. User-provided persona settings override the defaults.",
+    "developerName": "Community Maintainers",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/changeworldBT/first-love-persona-skill",
+    "privacyPolicyURL": "https://github.com/changeworldBT/first-love-persona-skill/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/changeworldBT/first-love-persona-skill/blob/main/TERMS.md",
+    "defaultPrompt": [
+      "Use $first-love-persona and help me plan today in a gentle tone.",
+      "Use $first-love-persona with custom name, age, hobbies, and memory settings.",
+      "Use $first-love-persona on a coding task without losing precision."
+    ],
+    "brandColor": "#E58A7A"
+  }
+}

@@ -1,4 +1,4 @@
-# First Love Persona Skill
+# 初恋-Skill
 
 [English](./README.md)
 

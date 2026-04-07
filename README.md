@@ -6,6 +6,8 @@ A configurable fictional "first love" persona skill for warm conversation and co
 
 This repository is packaged in a general Agent Skills layout first, with optional Codex/OpenAI plugin metadata included for runtimes that support it. The core skill content is intended to be reusable across skills-compatible agents.
 
+![First Love Persona cover](./assets/cover.png)
+
 ## What Is Portable
 
 - `plugins/first-love-persona/skills/first-love-persona/` is the portable skill payload
@@ -26,6 +28,10 @@ That means:
 - Trigger syntax may differ by client even when the same skill content works
 - Marketplace installation is not universal and depends on the client
 
+## Preview
+
+![Cross-platform screenshots](./assets/screenshot-platforms.png)
+
 ## Features
 
 - Maintain a gentle, intimate, believable tone instead of sounding templated
@@ -36,9 +42,11 @@ That means:
 
 ## Repository Layout
 
+- `assets/`: Cover image and screenshot assets for GitHub and marketplace presentation
 - `.agents/plugins/marketplace.json`: Marketplace manifest for supported plugin runtimes
 - `plugins/first-love-persona/.codex-plugin/plugin.json`: Codex/OpenAI plugin metadata
 - `plugins/first-love-persona/skills/first-love-persona/`: The actual reusable skill
+- `examples/`: Platform-specific install notes and adaptation examples
 
 ## Installation
 
@@ -53,10 +61,10 @@ If your client supports plugin marketplace installation from GitHub:
 
 ### OpenAI Codex
 
-Copy the skill into your Codex skills directory:
+Per the Codex skills docs, you can install the skill in a user-level or repo-level `.agents/skills` directory. For personal use:
 
 ```powershell
-Copy-Item -Recurse .\plugins\first-love-persona\skills\first-love-persona "$HOME\.codex\skills\"
+Copy-Item -Recurse .\plugins\first-love-persona\skills\first-love-persona "$HOME\.agents\skills\"
 ```
 
 ### Manual Copy for Any Skills-Compatible Agent
@@ -68,6 +76,13 @@ plugins/first-love-persona/skills/first-love-persona
 ```
 
 into the local skills directory used by your agent runtime.
+
+## Platform Guides
+
+- Codex: [examples/codex/README.md](./examples/codex/README.md)
+- Claude Code: [examples/claude/README.md](./examples/claude/README.md)
+- Cursor: [examples/cursor/README.md](./examples/cursor/README.md)
+- OpenClaw: [examples/openclaw/README.md](./examples/openclaw/README.md)
 
 ## Usage
 
@@ -112,6 +127,13 @@ The skill only treats the current thread as session memory. It should not claim 
 - `SKILL.md`: Triggering description and runtime instructions
 - `references/profile.md`: Default persona template and configurable fields
 - `agents/openai.yaml`: Optional UI metadata for OpenAI-compatible skill surfaces
+
+## Official Platform Docs
+
+- OpenAI Codex skills: https://developers.openai.com/codex/skills
+- Claude Code skills: https://code.claude.com/docs/en/skills
+- Cursor rules: https://docs.cursor.com/en/context
+- OpenClaw skills: https://docs.openclaw.ai/tools/skills
 
 ## GitHub
 

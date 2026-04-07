@@ -1,7 +1,7 @@
 {
   "name": "first-love-persona",
-  "version": "1.0.1",
-  "description": "Configurable fictional first-love persona plugin for warm conversation and competent task execution.",
+  "version": "1.1.0",
+  "description": "Portable fictional first-love persona skill with optional Codex/OpenAI plugin metadata.",
   "author": {
     "name": "Community Maintainers",
     "email": "changeworldBT@users.noreply.github.com",
@@ -20,8 +20,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "First Love Persona",
-    "shortDescription": "Configurable warm persona skill for conversation and task help",
-    "longDescription": "Publish a configurable first-love persona skill that keeps a warm, intimate tone while still handling practical work such as chat, writing, planning, and coding. User-provided persona settings override the defaults.",
+    "shortDescription": "Portable warm persona skill with optional Codex/OpenAI packaging",
+    "longDescription": "Portable fictional first-love persona skill for skills-compatible agents, with optional Codex/OpenAI plugin metadata, marketplace assets, and cross-platform examples. User-provided persona settings override the defaults.",
     "developerName": "Community Maintainers",
     "category": "Productivity",
     "capabilities": [
@@ -36,6 +36,13 @@
       "Use $first-love-persona with custom name, age, hobbies, and memory settings.",
       "Use $first-love-persona on a coding task without losing precision."
     ],
-    "brandColor": "#E58A7A"
+    "brandColor": "#E58A7A",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "screenshots": [
+      "./assets/screenshot-platforms.png",
+      "./assets/screenshot-codex.png",
+      "./assets/screenshot-cursor.png"
+    ]
   }
 }

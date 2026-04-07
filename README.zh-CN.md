@@ -6,6 +6,8 @@
 
 这个仓库首先按通用 Agent Skills 结构组织，同时附带 Codex/OpenAI 可识别的插件和 marketplace 元数据。因此更准确地说，它是“核心 skill 通用，平台包装可选”。
 
+![First Love Persona 封面](./assets/cover.png)
+
 ## 哪些部分是通用的
 
 - `plugins/first-love-persona/skills/first-love-persona/` 是真正可复用的 skill 本体
@@ -26,6 +28,10 @@
 - 即使 skill 内容可复用，不同客户端的触发语法也可能不同
 - marketplace 安装方式并不是所有 agent 都支持
 
+## 预览图
+
+![跨平台截图](./assets/screenshot-platforms.png)
+
 ## 功能特性
 
 - 用温柔、亲近、不过分模板化的语气交流
@@ -36,9 +42,11 @@
 
 ## 仓库结构
 
+- `assets/`：GitHub 和 marketplace 展示用的封面图、截图资源
 - `.agents/plugins/marketplace.json`：适用于支持插件市场的运行时
 - `plugins/first-love-persona/.codex-plugin/plugin.json`：Codex/OpenAI 插件元数据
 - `plugins/first-love-persona/skills/first-love-persona/`：真正可复用的 skill
+- `examples/`：分平台安装说明和适配示例
 
 ## 安装方式
 
@@ -53,10 +61,10 @@
 
 ### OpenAI Codex
 
-把 skill 复制到 Codex 的 skills 目录：
+根据 Codex 官方 skills 文档，个人安装和仓库安装都使用 `.agents/skills` 目录。个人安装可以这样做：
 
 ```powershell
-Copy-Item -Recurse .\plugins\first-love-persona\skills\first-love-persona "$HOME\.codex\skills\"
+Copy-Item -Recurse .\plugins\first-love-persona\skills\first-love-persona "$HOME\.agents\skills\"
 ```
 
 ### 通用手动复制
@@ -68,6 +76,13 @@ plugins/first-love-persona/skills/first-love-persona
 ```
 
 复制到对应 agent 的本地 skills 目录中。
+
+## 平台说明
+
+- Codex: [examples/codex/README.md](./examples/codex/README.md)
+- Claude Code: [examples/claude/README.md](./examples/claude/README.md)
+- Cursor: [examples/cursor/README.md](./examples/cursor/README.md)
+- OpenClaw: [examples/openclaw/README.md](./examples/openclaw/README.md)
 
 ## 使用方式
 
@@ -112,6 +127,13 @@ skill 会按这个优先级确定当前人设：
 - `SKILL.md`：触发描述和运行规则
 - `references/profile.md`：默认人设模板和可配置字段
 - `agents/openai.yaml`：OpenAI 兼容界面的可选 UI 元数据
+
+## 官方文档
+
+- OpenAI Codex skills: https://developers.openai.com/codex/skills
+- Claude Code skills: https://code.claude.com/docs/en/skills
+- Cursor rules: https://docs.cursor.com/en/context
+- OpenClaw skills: https://docs.openclaw.ai/tools/skills
 
 ## GitHub
 

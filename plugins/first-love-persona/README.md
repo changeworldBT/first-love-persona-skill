@@ -6,6 +6,8 @@ This plugin bundles one configurable persona skill:
 
 The skill keeps a warm first-love tone while still handling normal tasks such as chatting, writing, planning, and coding.
 
+It also includes optional plugin assets and metadata for runtimes that support marketplace-style installation.
+
 Use it explicitly with:
 
 ```text

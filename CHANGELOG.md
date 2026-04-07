@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.1.0
+
+Cross-platform packaging and presentation update.
+
+- Add generated cover art and screenshot assets for GitHub and plugin presentation
+- Add platform-specific examples for Codex, Claude Code, Cursor, and OpenClaw
+- Add a Cursor rule conversion example because Cursor uses rules rather than raw `SKILL.md` skills
+- Update English and Chinese READMEs with platform guides, screenshots, and official doc links
+- Add plugin asset metadata and bump the plugin package version to `1.1.0`
+
 ## v1.0.1
 
 Documentation and compatibility update.

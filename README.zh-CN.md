@@ -32,6 +32,14 @@
 
 ![跨平台截图](./assets/screenshot-platforms.png)
 
+## 推荐 Social Preview
+
+GitHub 仓库的 social preview 推荐使用这张图：
+
+```text
+assets/cover.png
+```
+
 ## 功能特性
 
 - 用温柔、亲近、不过分模板化的语气交流
@@ -83,6 +91,7 @@ plugins/first-love-persona/skills/first-love-persona
 - Claude Code: [examples/claude/README.md](./examples/claude/README.md)
 - Cursor: [examples/cursor/README.md](./examples/cursor/README.md)
 - OpenClaw: [examples/openclaw/README.md](./examples/openclaw/README.md)
+- Prompt 示例: [examples/prompts/README.md](./examples/prompts/README.md)
 
 ## 使用方式
 

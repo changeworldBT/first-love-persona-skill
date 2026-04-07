@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.1.1
+
+Prompt-pack and repository presentation follow-up.
+
+- Add reusable prompt examples for Codex, Claude Code, Cursor, and OpenClaw
+- Document `assets/cover.png` as the recommended GitHub social preview image
+- Keep the repository positioned as a portable cross-agent skill package
+
 ## v1.1.0
 
 Cross-platform packaging and presentation update.

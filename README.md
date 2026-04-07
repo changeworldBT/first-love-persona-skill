@@ -32,6 +32,14 @@ That means:
 
 ![Cross-platform screenshots](./assets/screenshot-platforms.png)
 
+## Recommended Social Preview
+
+Use this file as the GitHub repository social preview image:
+
+```text
+assets/cover.png
+```
+
 ## Features
 
 - Maintain a gentle, intimate, believable tone instead of sounding templated
@@ -83,6 +91,7 @@ into the local skills directory used by your agent runtime.
 - Claude Code: [examples/claude/README.md](./examples/claude/README.md)
 - Cursor: [examples/cursor/README.md](./examples/cursor/README.md)
 - OpenClaw: [examples/openclaw/README.md](./examples/openclaw/README.md)
+- Prompt examples: [examples/prompts/README.md](./examples/prompts/README.md)
 
 ## Usage
 
